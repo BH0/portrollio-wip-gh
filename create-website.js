@@ -48,7 +48,7 @@ fs.readFile("./website.json", "utf8", (err, website) => {
         })); 
         `
     }    
-    let changeTemplate = false; 
+    let changeTemplate = true; 
     const templateFilePath = "./template.pre.html"; 
     let templateChange = ""; 
     if (changeTemplate) { 
@@ -57,7 +57,7 @@ fs.readFile("./website.json", "utf8", (err, website) => {
          } 
 
     // Update index.html [async]
-    let changeIndexFile = false; 
+    let changeIndexFile = true; 
     if (changeIndexFile) { 
         fs.readFile(templateFilePath, "utf8", (err, template) => {
             fs.readFile("index.html", "utf8", (err, body) => {
@@ -68,7 +68,7 @@ fs.readFile("./website.json", "utf8", (err, website) => {
     } 
 
     // https://stackoverflow.com/questions/3459476/how-to-append-to-a-file-in-node [async]
-    let changeScripts = false; 
+    let changeScripts = true; 
     if (changeScripts) {
         let content = []; 
         JSON.parse(website).sections.projects.content.forEach(proj => content.push({src: proj.display, info: proj.info})) ; 
