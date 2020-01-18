@@ -1,0 +1,8 @@
+ .nav a {
+	color: green;
+	font-size: 140%; 
+}
+.nav {
+	background-color: blue;
+	font: 'helvetica'; 
+}

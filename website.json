@@ -1,0 +1,69 @@
+{
+    "styling": {
+        "textColor": "red", 
+        "backgroundColor": "grey", 
+        "borderColor": "purple"
+    }, 
+    "sections": {
+        "nav": {
+            "sections": [
+                { "about": "About me"}, 
+                { "projects": "Work"}
+            ], 
+            "order": ["about", "projects"], "_comment": "this order property is strictly for CSS to use the order rule thus retaining SEO ", 
+            "social": [
+                {
+                    "name": "facebook", 
+                    "link": "https://en-gb.facebook.com/"
+                }, 
+                {
+                    "name": "youtube", 
+                    "link": "https://youtube.com/"
+                }
+            ], 
+            "_comment": "https://stackoverflow.com/a/7744658 | note: I am not sure as to how the CSS should be inputted | CSS syntax will be handled via create-website.js",
+            "styling": [ 
+                { 
+                    "selector": "a",
+                    "styles": ["color: green;", "font-size: 140%;"]
+                }, 
+                {
+                    "selector": ".nav", "styles": ["background-color: blue;", "font: 'helvetica';"]
+                }
+            ]
+        },
+        "about": {
+            "text": "I am a test website, you'll probably find a lot of lorem through out me, I am the about me section lorem, you can reproduce with an adult or an elder, but not with a junior, this is why elders & adults cost more. Juniors are typically just used for food distribution instead of reproduction."
+        }, 
+        "projects": { 
+            "borderColor": "pink", 
+            "content": [
+                {
+                    "display": "https://images.pexels.com/photos/110820/pexels-photo-110820.jpeg?auto=compress&cs=tinysrgb&dpr=1", 
+                    "info": "Junior $40"
+                }, 
+                {
+                    "display": "https://images.pexels.com/photos/1300361/pexels-photo-1300361.jpeg?auto=compress&cs=tinysrgb&dpr=1", 
+                    "info": "Elder $80"
+                }, 
+                {
+                    "display": "https://images.pexels.com/photos/787840/pexels-photo-787840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
+                    "info": "Adult $70"
+                }, 
+                {
+                    "display": "https://images.pexels.com/photos/110820/pexels-photo-110820.jpeg?auto=compress&cs=tinysrgb&dpr=1", 
+                    "info": "Junior $40"
+                }, 
+                {
+                    "display": "https://images.pexels.com/photos/1300361/pexels-photo-1300361.jpeg?auto=compress&cs=tinysrgb&dpr=1", 
+                    "info": "Elder $80"
+                }, 
+                {
+                    "display": "https://images.pexels.com/photos/787840/pexels-photo-787840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", 
+                    "info": "Adult $70"
+                }
+            ]
+        }
+    }
+} 
+

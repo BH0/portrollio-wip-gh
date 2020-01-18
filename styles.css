@@ -1,0 +1,84 @@
+@import "custom.css"; 
+:root {
+    --red-text: red; 
+    --blue-text: blue; 
+    --green-text: green; 
+} 
+
+/* // note: ScrollReveal.js may had been messing up Masonry's responsiveness 
+.grid { /* quick fix * 
+    padding-bottom: 1em; 
+}
+*/ 
+.grid-item { width: 100px; border: 2px solid purple; }
+.grid-item img { width: 100%; height: auto; text-align: center; }
+.grid-item div {
+    text-align: center;
+} 
+
+.dummy-section {
+    line-height: 120px; 
+    padding: 20px 20x 20px 20px; 
+    border: 10px solid grey;  
+} 
+
+.red { background-color: red; } .blue { background-color: blue; } 
+
+.blue-text { color: var(--blue-text); } 
+.red-text { color: var(--red-text); } 
+.green-text { color: var(--green-text); } 
+
+
+.center-text { text-align: center; } 
+
+/* nav.css */ 
+.nav {
+    display: inline-flex; 
+    padding-left: 5em; 
+} 
+.nav a {
+    font-size: 120%; 
+}
+
+/* probably instead belongs in a "custom.css" [if the user wishes not to edit files directly] file */ 
+.nav a, .about {
+    font-size: 120%; 
+} 
+
+.fixed {
+    z-index: 100;
+    position: fixed; 
+} 
+
+/* Style all font awesome icons */
+.fa {
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black; 
+    color: white; 
+    padding: 4px 4px 4px 4px; 
+    margin: 4px 4px 4px 4px; 
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* 
+/* Facebook * 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter *
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}        
+*/ 
+
